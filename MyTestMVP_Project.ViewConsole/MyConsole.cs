@@ -13,14 +13,19 @@ namespace MyTestMVP_Project.ViewConsole
     internal class MyConsole : IViewInterface
     {
         public event EventHandler EnterPassword;
-        public string Passwor { get; }
+        private string _password;
+        public string Passwor { get => _password; }
 
         public void Start()
         {
             Console.WriteLine("Старт программы");
             PrintMessage("Введите пароль");
-            var buf =  GetString();
+            _password =  GetString();
 
+            if(EnterPassword != null)
+            {
+                EnterPassword(this,  EventArgs.Empty);
+            }
         }
 
         private string  GetString()
@@ -33,10 +38,6 @@ namespace MyTestMVP_Project.ViewConsole
             }
             return buf; ;
         }
-
-
-
-
 
         public void PrintMessage(string message)
         {
