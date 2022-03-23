@@ -16,9 +16,20 @@ namespace MyTestMVP_Project.Prezenter
         {
             _bl = bl;
             _view = view;
-
+            _view.EnterPassword += _view_EnterPassword;
         }
 
-
+        private void _view_EnterPassword(object sender, EventArgs e)
+        { 
+            try
+            {
+                var content = _bl.AuthorizationPasswor(_view.Passwor);
+                _view.PrintMessage(content);
+            }
+            catch (Exception ex)
+            {
+                _view.PrintMessage(ex.ToString());
+            }
+        }
     }
 }
