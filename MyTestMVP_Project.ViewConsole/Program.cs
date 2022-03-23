@@ -6,7 +6,18 @@ namespace MyTestMVP_Project.ViewConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           
+            try
+            {
+                MyConsole myConsole = new MyConsole();
+                myConsole.Start();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+
         }
     }
 }
+//https://github.com/frakiec89/MyTestMVP_Project.ViewConsole
