@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTestMVP_Project.ViewConso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTestMVP_Project.Core", "MyTestMVP_Project.Core\MyTestMVP_Project.Core.csproj", "{E430503C-2500-4EC2-8647-13F31419DC7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTestMVP_Project.BL", "MyTestMVP_Project.BL\MyTestMVP_Project.BL.csproj", "{128A5F9D-91C3-483C-AF99-92CD6F3104E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E430503C-2500-4EC2-8647-13F31419DC7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E430503C-2500-4EC2-8647-13F31419DC7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E430503C-2500-4EC2-8647-13F31419DC7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{128A5F9D-91C3-483C-AF99-92CD6F3104E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{128A5F9D-91C3-483C-AF99-92CD6F3104E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{128A5F9D-91C3-483C-AF99-92CD6F3104E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{128A5F9D-91C3-483C-AF99-92CD6F3104E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
